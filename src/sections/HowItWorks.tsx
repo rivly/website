@@ -35,16 +35,6 @@ export default function HowItWorks() {
             </li>
           ))}
         </ol>
-
-        <div className="how__run">
-          <span className="how__prompt" aria-hidden="true">
-            $
-          </span>
-          <code>
-            docker run -d -p 8080:8080 -v
-            /var/run/docker.sock:/var/run/docker.sock rivly/rivly
-          </code>
-        </div>
       </div>
     </section>
   )
