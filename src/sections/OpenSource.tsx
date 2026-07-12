@@ -10,11 +10,11 @@ export default function OpenSource() {
           <LuGithub size={26} />
         </span>
 
-        <h2 className="oss__title">Open source, and yours to run.</h2>
+        <h2 className="oss__title">Open source, no asterisks.</h2>
 
         <p className="oss__lead">
-          Rivly is MIT licensed and self-hosted. Read every line, run it on your
-          own hardware, and send a pull request. No accounts, no telemetry, no
+          Rivly is MIT licensed and runs entirely on your own hardware. Read the
+          code, fork it, send a pull request. No accounts, no telemetry, no
           lock-in.
         </p>
 

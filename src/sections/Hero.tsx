@@ -14,9 +14,9 @@ export default function Hero() {
           </h1>
 
           <p className="hero__lead">
-            Rivly is an open-source UI for Docker Swarm and standalone hosts.
-            Deploy your stacks, watch every service, and see the whole cluster
-            in one place.
+            Rivly is an open-source UI for Docker, from a single host to a full
+            Swarm. Deploy your stacks, watch every container, and see it all in
+            one view.
           </p>
 
           <div className="hero__actions">

@@ -30,10 +30,10 @@ export default function NotifyCTA() {
   return (
     <section id="notify" className="notify">
       <div className="container notify__inner">
-        <h2 className="notify__title">Be there for v0.1.</h2>
+        <h2 className="notify__title">Be running Rivly on day one.</h2>
         <p className="notify__lead">
-          Rivly is in early development. Leave your email and we&rsquo;ll tell
-          you the day it ships. One message, no spam.
+          Rivly is in early development. Leave your email and we&rsquo;ll send
+          one message the day it ships. No spam, no newsletter.
         </p>
 
         {status === 'done' ? (

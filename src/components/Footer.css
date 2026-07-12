@@ -59,6 +59,19 @@
   color: var(--fg-muted);
 }
 
+.footer__madein {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.footer__flag {
+  display: block;
+  height: 13px;
+  width: auto;
+  border-radius: 2px;
+}
+
 .footer__source {
   display: inline-flex;
   align-items: center;

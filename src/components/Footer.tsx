@@ -1,6 +1,7 @@
 import { LuGithub } from 'react-icons/lu'
 import { GITHUB_REPO_URL, WEBSITE_REPO_URL, DOCS_URL } from '../lib/constants'
 import logo from '../../brand/logo-blue-no-bg.png'
+import euFlag from '../../brand/europe-flag.jpg'
 import './Footer.css'
 
 const LINKS = [
@@ -34,6 +35,12 @@ export default function Footer() {
 
       <div className="container footer__bottom">
         <span>© 2026 Rivly</span>
+
+        <span className="footer__madein">
+          <img className="footer__flag" src={euFlag} alt="" />
+          Made in Europe
+        </span>
+
         <a
           className="footer__source"
           href={WEBSITE_REPO_URL}
