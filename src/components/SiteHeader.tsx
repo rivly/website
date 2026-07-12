@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import { LuGithub, LuArrowRight } from 'react-icons/lu'
-import { GITHUB_REPO_URL } from '../lib/constants'
+import { GITHUB_REPO_URL, DOCS_URL } from '../lib/constants'
 import logo from '../../brand/logo-blue-no-bg.png'
 import './SiteHeader.css'
 
 const LINKS = [
   { label: 'Features', href: '#features' },
   { label: 'How it works', href: '#how' },
-  { label: 'Documentation', href: GITHUB_REPO_URL, external: true },
+  { label: 'Documentation', href: DOCS_URL, external: true },
   { label: 'Open source', href: '#open-source' },
 ]
 

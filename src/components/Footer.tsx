@@ -1,11 +1,11 @@
 import { LuGithub } from 'react-icons/lu'
-import { GITHUB_REPO_URL, WEBSITE_REPO_URL } from '../lib/constants'
+import { GITHUB_REPO_URL, WEBSITE_REPO_URL, DOCS_URL } from '../lib/constants'
 import logo from '../../brand/logo-blue-no-bg.png'
 import './Footer.css'
 
 const LINKS = [
   { label: 'GitHub', href: GITHUB_REPO_URL },
-  { label: 'Documentation', href: GITHUB_REPO_URL },
+  { label: 'Documentation', href: DOCS_URL },
   { label: 'MIT License', href: `${GITHUB_REPO_URL}/blob/main/LICENSE` },
 ]
 
