@@ -38,7 +38,6 @@
   max-width: 30rem;
 }
 
-/* honeypot: off-screen, only bots fill it */
 .notify__hp {
   position: absolute;
   left: -9999px;

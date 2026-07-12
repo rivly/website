@@ -2,8 +2,6 @@ import { useState, type FormEvent } from 'react'
 import { LuArrowRight } from 'react-icons/lu'
 import './NotifyCTA.css'
 
-// Posts to the Cloudflare Pages Function at functions/api/subscribe.js,
-// which stores the email in the KV namespace bound as WAITLIST.
 const NOTIFY_ENDPOINT = '/api/subscribe'
 
 type Status = 'idle' | 'loading' | 'done' | 'error'

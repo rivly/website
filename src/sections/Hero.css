@@ -4,7 +4,6 @@
   padding: 96px 0 100px;
 }
 
-/* subtle dot grid, concentrated near the top and faded out */
 .hero::before {
   content: "";
   position: absolute;

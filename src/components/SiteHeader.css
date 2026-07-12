@@ -11,7 +11,6 @@
     background 0.2s ease;
 }
 
-/* border + faint shadow appear only once scrolled (clean at the very top) */
 .site-header[data-scrolled] {
   background: rgba(255, 255, 255, 0.9);
   border-bottom-color: var(--border);

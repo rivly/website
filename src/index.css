@@ -1,9 +1,3 @@
-/* =========================================================
-   Rivly — foundations (light, Cloudflare-dashboard calibrated)
-   Clean surfaces, hairline borders, refined "lit" buttons.
-   ========================================================= */
-
-/* ---------- Reset ---------- */
 *,
 *::before,
 *::after {
@@ -59,7 +53,6 @@ a {
   text-decoration: none;
 }
 
-/* ---------- Tokens ---------- */
 :root {
   color-scheme: light;
 
@@ -71,7 +64,6 @@ a {
   --border: #e6e8ec;
   --border-strong: #d6dae0;
 
-  /* Accent (matches the Rivly logo blue — one variable to swap the hue) */
   --accent: #2f7bff;
   --accent-strong: #1e69f0;
   --accent-border: #1a5fdc;
@@ -88,7 +80,6 @@ a {
     monospace;
 }
 
-/* ---------- Base type ---------- */
 h1,
 h2,
 h3 {
@@ -117,7 +108,6 @@ section[id] {
   scroll-margin-top: 84px;
 }
 
-/* ---------- Layout ---------- */
 .container {
   width: 100%;
   max-width: var(--container);
@@ -125,7 +115,6 @@ section[id] {
   padding-inline: 24px;
 }
 
-/* ---------- Buttons (the "lit surface" recipe) ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -150,7 +139,6 @@ section[id] {
   transform: translateY(-1px);
 }
 
-/* pressing returns to baseline for a tactile "push" */
 .btn:active {
   transform: translateY(0);
   transition-duration: 0s;
@@ -195,7 +183,6 @@ section[id] {
     0 4px 10px rgba(16, 24, 40, 0.08);
 }
 
-/* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
