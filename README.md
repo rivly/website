@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="brand/logo-white-full.png" />
-    <img alt="Rivly" src="brand/logo-blue-full.png" width="200" />
+    <img alt="Rivly" src="brand/logo-blue-full.png" width="500" />
   </picture>
 </p>
 
@@ -20,7 +20,7 @@ bun run lint    # oxlint
 
 ## Stack
 
-Vite 8, React 19, TypeScript 6, and vanilla CSS. Icons from `react-icons` (Lucide). No Tailwind, no CSS-in-JS, no UI library.
+Vite 8, React 19, TypeScript 6, and vanilla CSS.
 
 ```
 src/
