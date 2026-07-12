@@ -13,13 +13,15 @@ export default function NotifyCTA() {
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    const email = String(new FormData(e.currentTarget).get('email') || '')
+    const fd = new FormData(e.currentTarget)
+    const email = String(fd.get('email') || '')
+    const company = String(fd.get('company') || '')
     setStatus('loading')
     try {
       const res = await fetch(NOTIFY_ENDPOINT, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, company }),
       })
       setStatus(res.ok ? 'done' : 'error')
     } catch {
@@ -40,6 +42,14 @@ export default function NotifyCTA() {
           <p className="notify__done">Thanks. You&rsquo;re on the list.</p>
         ) : (
           <form className="notify__form" onSubmit={onSubmit}>
+            <input
+              className="notify__hp"
+              type="text"
+              name="company"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+            />
             <input
               className="notify__input"
               type="email"
