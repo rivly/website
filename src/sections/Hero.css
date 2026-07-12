@@ -44,6 +44,10 @@
   max-width: 15ch;
 }
 
+.hero__em {
+  color: var(--accent);
+}
+
 .hero__lead {
   margin-top: 20px;
   max-width: 34rem;

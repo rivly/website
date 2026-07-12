@@ -9,7 +9,8 @@ export default function Hero() {
       <div className="container hero__grid">
         <div className="hero__copy">
           <h1 className="hero__title">
-            The Docker dashboard you&rsquo;ll actually keep open.
+            The Docker dashboard you&rsquo;ll{' '}
+            <span className="hero__em">actually</span> keep open.
           </h1>
 
           <p className="hero__lead">
