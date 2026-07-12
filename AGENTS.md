@@ -23,6 +23,7 @@ Vite 8, React 19, TypeScript 6 (`erasableSyntaxOnly`), vanilla CSS, `react-icons
 - `ref` is a normal prop. No `forwardRef`, `defaultProps`, `propTypes`.
 - No TS `enum` or `namespace` (`erasableSyntaxOnly`). Use `as const` objects and union types.
 - Import only what you use (`import { useState } from 'react'`), no top-level `import React`.
+- `verbatimModuleSyntax` is on: mark type-only imports with `type` (`import { useState, type FormEvent } from 'react'`).
 - No comments. Let clear names and small components carry the intent.
 - Co-locate `Component.css` with `Component.tsx`. Classes are block-namespaced (`.hero__title`).
 
