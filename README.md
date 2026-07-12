@@ -1,32 +1,50 @@
-# React + TypeScript + Vite
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="brand/logo-white-full.png" />
+    <img alt="Rivly" src="brand/logo-blue-full.png" width="200" />
+  </picture>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Rivly website
 
-Currently, two official plugins are available:
+The marketing site for [Rivly](https://github.com/rivly/rivly), an open-source dashboard for Docker, from a single host to a full Swarm.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Live at [rivly.dev](https://rivly.dev).
 
-## React Compiler
+## Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Requires [Bun](https://bun.sh).
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+bun install     # install dependencies
+bun run dev     # dev server at localhost:5173
+bun run build   # type-check and build to dist/
+bun run lint    # oxlint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Stack
+
+Vite 8, React 19, TypeScript 6, and vanilla CSS. Icons from `react-icons` (Lucide). No Tailwind, no CSS-in-JS, no UI library.
+
+```
+src/
+  main.tsx        entry
+  App.tsx         composes the sections
+  index.css       reset and design tokens
+  components/     reusable UI
+  sections/       one file per landing section
+  lib/            constants and helpers
+functions/        Cloudflare Pages Functions
+```
+
+## Deployment
+
+Deployed on Cloudflare Pages. Pushes to `main` build with `bun run build` and publish `dist/`.
+
+## Contributing
+
+Conventions for both people and coding agents live in [AGENTS.md](./AGENTS.md).
+
+## License
+
+MIT
