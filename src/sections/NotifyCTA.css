@@ -1,0 +1,83 @@
+.notify {
+  padding: 100px 0;
+  background: var(--bg-subtle);
+}
+
+.notify__inner {
+  max-width: 40rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.notify__title {
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.notify__lead {
+  margin-top: 14px;
+  max-width: 32rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--fg-muted);
+}
+
+.notify__form {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.notify__input {
+  flex: 1 1 220px;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 0.9375rem;
+  color: var(--fg);
+  box-shadow: inset 0 1px 2px rgba(16, 24, 40, 0.04);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.notify__input::placeholder {
+  color: var(--fg-muted);
+}
+
+.notify__input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 18%, transparent);
+}
+
+.notify__form .btn:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.notify__done,
+.notify__error {
+  margin-top: 22px;
+  font-size: 0.95rem;
+}
+
+.notify__done {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.notify__error {
+  color: #b42318;
+}

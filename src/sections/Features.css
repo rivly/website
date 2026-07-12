@@ -1,0 +1,54 @@
+.features {
+  padding: 96px 0;
+}
+
+.features__intro {
+  max-width: 42rem;
+}
+
+.features__intro h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.features__intro p {
+  margin-top: 14px;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--fg-muted);
+}
+
+.spotlight {
+  margin-top: 56px;
+  display: grid;
+  gap: 40px;
+}
+
+.spotlight__copy h3 {
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.spotlight__copy p {
+  margin-top: 14px;
+  max-width: 32rem;
+  font-size: 1.03rem;
+  line-height: 1.6;
+  color: var(--fg-muted);
+}
+
+@media (min-width: 900px) {
+  .spotlight {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 64px;
+    align-items: center;
+  }
+
+  .spotlight--media-left .spotlight__media {
+    order: -1;
+  }
+}
