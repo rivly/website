@@ -5,11 +5,7 @@
   </picture>
 </p>
 
-# Rivly website
-
-The marketing site for [Rivly](https://github.com/rivly/rivly), an open-source dashboard for Docker, from a single host to a full Swarm.
-
-Live at [rivly.dev](https://rivly.dev).
+The marketing site for [Rivly](https://github.com/rivly/rivly).
 
 ## Development
 
