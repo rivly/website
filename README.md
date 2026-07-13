@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-The marketing site for [Rivly](https://github.com/rivly/rivly).
+The marketing site for [Rivly](https://github.com/rivly/rivly), live at [rivly.dev](https://rivly.dev).
 
 ## Development
 
