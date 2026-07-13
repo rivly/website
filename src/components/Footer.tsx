@@ -1,4 +1,5 @@
 import { LuGithub } from 'react-icons/lu'
+import ExternalLink from './ExternalLink'
 import { GITHUB_REPO_URL, WEBSITE_REPO_URL, DOCS_URL } from '../lib/constants'
 import logo from '../../brand/logo-blue-no-bg.png'
 import euFlag from '../../brand/europe-flag.jpg'
@@ -26,9 +27,9 @@ export default function Footer() {
 
         <nav className="footer__links">
           {LINKS.map((l) => (
-            <a key={l.label} href={l.href} target="_blank" rel="noreferrer">
+            <ExternalLink key={l.label} href={l.href}>
               {l.label}
-            </a>
+            </ExternalLink>
           ))}
         </nav>
       </div>
@@ -41,15 +42,10 @@ export default function Footer() {
           Made in Europe
         </span>
 
-        <a
-          className="footer__source"
-          href={WEBSITE_REPO_URL}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <ExternalLink className="footer__source" href={WEBSITE_REPO_URL}>
           <LuGithub size={14} />
           This site is open source
-        </a>
+        </ExternalLink>
       </div>
     </footer>
   )

@@ -1,6 +1,21 @@
 import Placeholder from '../components/Placeholder'
 import './Features.css'
 
+const SPOTLIGHTS = [
+  {
+    title: 'Every container, service, and node.',
+    desc: 'On a single host, Rivly lists every container with its logs and health. On a Swarm, it maps services to the nodes running them and tracks each task. Same clean view, either way.',
+    label: 'Overview',
+    mediaLeft: true,
+  },
+  {
+    title: 'Deploy your stacks from Git.',
+    desc: 'Point Rivly at a Git repository and it deploys your stacks, then keeps them in sync. Your definitions live in version control, not locked inside a database.',
+    label: 'Stacks & GitOps',
+    mediaLeft: false,
+  },
+]
+
 export default function Features() {
   return (
     <section id="features" className="features">
@@ -14,33 +29,22 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="spotlight spotlight--media-left">
-          <div className="spotlight__copy">
-            <h3>Every container, service, and node.</h3>
-            <p>
-              On a single host, Rivly lists every container with its logs and
-              health. On a Swarm, it maps services to the nodes running them and
-              tracks each task. Same clean view, either way.
-            </p>
+        {SPOTLIGHTS.map((s) => (
+          <div
+            key={s.label}
+            className={
+              s.mediaLeft ? 'spotlight spotlight--media-left' : 'spotlight'
+            }
+          >
+            <div className="spotlight__copy">
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+            </div>
+            <div className="spotlight__media">
+              <Placeholder label={s.label} ratio="4 / 3" />
+            </div>
           </div>
-          <div className="spotlight__media">
-            <Placeholder label="Overview" ratio="4 / 3" />
-          </div>
-        </div>
-
-        <div className="spotlight">
-          <div className="spotlight__copy">
-            <h3>Deploy your stacks from Git.</h3>
-            <p>
-              Point Rivly at a Git repository and it deploys your stacks, then
-              keeps them in sync. Your definitions live in version control, not
-              locked inside a database.
-            </p>
-          </div>
-          <div className="spotlight__media">
-            <Placeholder label="Stacks & GitOps" ratio="4 / 3" />
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   )

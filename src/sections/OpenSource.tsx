@@ -1,4 +1,5 @@
 import { LuGithub, LuStar } from 'react-icons/lu'
+import ExternalLink from '../components/ExternalLink'
 import { GITHUB_REPO_URL } from '../lib/constants'
 import './OpenSource.css'
 
@@ -19,23 +20,13 @@ export default function OpenSource() {
         </p>
 
         <div className="oss__actions">
-          <a
-            className="btn btn-primary"
-            href={GITHUB_REPO_URL}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <ExternalLink className="btn btn-primary" href={GITHUB_REPO_URL}>
             <LuStar size={16} />
             Star on GitHub
-          </a>
-          <a
-            className="btn btn-secondary"
-            href={GITHUB_REPO_URL}
-            target="_blank"
-            rel="noreferrer"
-          >
+          </ExternalLink>
+          <ExternalLink className="btn btn-secondary" href={GITHUB_REPO_URL}>
             Browse the code
-          </a>
+          </ExternalLink>
         </div>
       </div>
     </section>

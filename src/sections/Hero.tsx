@@ -1,5 +1,6 @@
 import { LuStar, LuArrowRight } from 'react-icons/lu'
 import Placeholder from '../components/Placeholder'
+import ExternalLink from '../components/ExternalLink'
 import { GITHUB_REPO_URL } from '../lib/constants'
 import './Hero.css'
 
@@ -20,15 +21,10 @@ export default function Hero() {
           </p>
 
           <div className="hero__actions">
-            <a
-              className="btn btn-primary"
-              href={GITHUB_REPO_URL}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <ExternalLink className="btn btn-primary" href={GITHUB_REPO_URL}>
               <LuStar size={16} />
               Star on GitHub
-            </a>
+            </ExternalLink>
             <a className="btn btn-secondary" href="#notify">
               Get notified
               <LuArrowRight size={16} />

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { LuGithub, LuArrowRight } from 'react-icons/lu'
+import ExternalLink from './ExternalLink'
 import { GITHUB_REPO_URL, DOCS_URL } from '../lib/constants'
 import logo from '../../brand/logo-blue-no-bg.png'
 import './SiteHeader.css'
@@ -49,15 +50,13 @@ export default function SiteHeader() {
         </nav>
 
         <div className="site-header__actions">
-          <a
+          <ExternalLink
             className="site-header__icon"
             href={GITHUB_REPO_URL}
-            target="_blank"
-            rel="noreferrer"
             aria-label="Rivly on GitHub"
           >
             <LuGithub size={18} />
-          </a>
+          </ExternalLink>
           <a className="btn btn-primary site-header__cta" href="#notify">
             Get notified
             <LuArrowRight size={15} />
