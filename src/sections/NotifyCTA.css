@@ -91,3 +91,19 @@
 .notify__error {
   color: #b42318;
 }
+
+.notify__legal {
+  margin-top: 16px;
+  font-size: 0.825rem;
+  color: var(--fg-muted);
+}
+
+.notify__legal a {
+  color: var(--fg-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.notify__legal a:hover {
+  color: var(--fg);
+}

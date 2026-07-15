@@ -11,6 +11,11 @@ const LINKS = [
   { label: 'MIT License', href: `${GITHUB_REPO_URL}/blob/main/LICENSE` },
 ]
 
+const LEGAL_LINKS = [
+  { label: 'Legal notice', href: '/legal' },
+  { label: 'Privacy policy', href: '/privacy' },
+]
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -30,6 +35,11 @@ export default function Footer() {
             <ExternalLink key={l.label} href={l.href}>
               {l.label}
             </ExternalLink>
+          ))}
+          {LEGAL_LINKS.map((l) => (
+            <a key={l.label} href={l.href}>
+              {l.label}
+            </a>
           ))}
         </nav>
       </div>

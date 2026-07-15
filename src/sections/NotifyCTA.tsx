@@ -67,6 +67,13 @@ export default function NotifyCTA() {
           </form>
         )}
 
+        {status !== 'done' && (
+          <p className="notify__legal">
+            We use your address for that one message, nothing else. Read the{' '}
+            <a href="/privacy">privacy policy</a>.
+          </p>
+        )}
+
         {status === 'error' && (
           <p className="notify__error">
             Something went wrong. Please try again in a moment.

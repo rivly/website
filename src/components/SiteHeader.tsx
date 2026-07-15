@@ -6,10 +6,10 @@ import logo from '../../brand/logo-blue-no-bg.png'
 import './SiteHeader.css'
 
 const LINKS = [
-  { label: 'Features', href: '#features' },
-  { label: 'How it works', href: '#how' },
+  { label: 'Features', href: '/#features' },
+  { label: 'How it works', href: '/#how' },
   { label: 'Documentation', href: DOCS_URL, external: true },
-  { label: 'Open source', href: '#open-source' },
+  { label: 'Open source', href: '/#open-source' },
 ]
 
 export default function SiteHeader() {
@@ -57,7 +57,7 @@ export default function SiteHeader() {
           >
             <LuGithub size={18} />
           </ExternalLink>
-          <a className="btn btn-primary site-header__cta" href="#notify">
+          <a className="btn btn-primary site-header__cta" href="/#notify">
             Get notified
             <LuArrowRight size={15} />
           </a>
